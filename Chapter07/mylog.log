@@ -1,0 +1,42 @@
+2021-09-03 17:16:40.122 | ERROR    | __main__:function2:14 - Divide by Zero!
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python39\lib\idlelib\run.py", line 156, in main
+    ret = method(*args, **kwargs)
+          |       |       -> {}
+          |       -> (<code object <module> at 0x000001D3E9EFDB30, file "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition...
+          -> <bound method Executive.runcode of <idlelib.run.Executive object at 0x000001D3E802F730>>
+
+  File "C:\Users\Ashwin\AppData\Local\Programs\Python\Python39\lib\idlelib\run.py", line 559, in runcode
+    exec(code, self.locals)
+         |     |    -> {'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__...
+         |     -> <idlelib.run.Executive object at 0x000001D3E802F730>
+         -> <code object <module> at 0x000001D3E9EFDB30, file "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/...
+
+  File "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog16.py", line 16, in <module>
+    function2(0)
+    -> <function function2 at 0x000001D3EA6264C0>
+
+> File "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog16.py", line 12, in function2
+    function1(5, c)
+    |            -> 0
+    -> <function function1 at 0x000001D3EA61DE50>
+
+  File "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog16.py", line 8, in function1
+    return a / b
+           |   -> 0
+           -> 5
+
+ZeroDivisionError: division by zero
+2021-09-03 @ 17:35:07 - DEBUG - Debug
+2021-09-03 @ 17:35:07 - INFO - Info
+2021-09-03 @ 17:35:28 - DEBUG - Debug
+2021-09-03 @ 17:35:29 - INFO - Info
+{"text": "2021-09-03 17:43:16.001 | INFO     | __main__:<module>:14 - No matter added sinks, this message is not displayed\n", "record": {"elapsed": {"repr": "0:00:00.031248", "seconds": 0.031248}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\u2139\ufe0f", "name": "INFO", "no": 20}, "line": 14, "message": "No matter added sinks, this message is not displayed", "module": "prog18", "name": "__main__", "process": {"id": 9116, "name": "MainProcess"}, "thread": {"id": 11060, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:43:16.001858+05:30", "timestamp": 1630671196.001858}}}
+{"text": "2021-09-03 17:43:16.017 | INFO     | __main__:<module>:16 - This message however is propagated to the sinks\n", "record": {"elapsed": {"repr": "0:00:00.046830", "seconds": 0.04683}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\u2139\ufe0f", "name": "INFO", "no": 20}, "line": 16, "message": "This message however is propagated to the sinks", "module": "prog18", "name": "__main__", "process": {"id": 9116, "name": "MainProcess"}, "thread": {"id": 11060, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:43:16.017440+05:30", "timestamp": 1630671196.01744}}}
+{"text": "2021-09-03 17:44:08.231 | DEBUG    | __main__:<module>:13 - Debug\n", "record": {"elapsed": {"repr": "0:00:00.017214", "seconds": 0.017214}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\ud83d\udc1e", "name": "DEBUG", "no": 10}, "line": 13, "message": "Debug", "module": "prog18", "name": "__main__", "process": {"id": 12688, "name": "MainProcess"}, "thread": {"id": 17524, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:44:08.231903+05:30", "timestamp": 1630671248.231903}}}
+{"text": "2021-09-03 17:44:08.247 | INFO     | __main__:<module>:14 - Info\n", "record": {"elapsed": {"repr": "0:00:00.032836", "seconds": 0.032836}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\u2139\ufe0f", "name": "INFO", "no": 20}, "line": 14, "message": "Info", "module": "prog18", "name": "__main__", "process": {"id": 12688, "name": "MainProcess"}, "thread": {"id": 17524, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:44:08.247525+05:30", "timestamp": 1630671248.247525}}}
+{"text": "2021-09-03 17:44:49.396 | DEBUG    | __main__:<module>:12 - Debug\n", "record": {"elapsed": {"repr": "0:00:00.031236", "seconds": 0.031236}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\ud83d\udc1e", "name": "DEBUG", "no": 10}, "line": 12, "message": "Debug", "module": "prog18", "name": "__main__", "process": {"id": 11020, "name": "MainProcess"}, "thread": {"id": 18676, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:44:49.396318+05:30", "timestamp": 1630671289.396318}}}
+{"text": "2021-09-03 17:44:49.416 | INFO     | __main__:<module>:13 - Info\n", "record": {"elapsed": {"repr": "0:00:00.050969", "seconds": 0.050969}, "exception": null, "extra": {}, "file": {"name": "prog18.py", "path": "C:/Users/Ashwin/Google Drive/Python Unit Test Automation - Second Edition/Code/Chapter07/prog18.py"}, "function": "<module>", "level": {"icon": "\u2139\ufe0f", "name": "INFO", "no": 20}, "line": 13, "message": "Info", "module": "prog18", "name": "__main__", "process": {"id": 11020, "name": "MainProcess"}, "thread": {"id": 18676, "name": "MainThread"}, "time": {"repr": "2021-09-03 17:44:49.416051+05:30", "timestamp": 1630671289.416051}}}

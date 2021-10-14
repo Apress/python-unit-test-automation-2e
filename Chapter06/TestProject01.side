@@ -1,0 +1,87 @@
+{
+  "id": "733ad789-d8c7-44ca-8754-ae16b8a6cddb",
+  "version": "2.0",
+  "name": "TestProject01",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "81e8b52b-a3db-4452-bad8-b0ca47032962",
+    "name": "Test01",
+    "commands": [{
+      "id": "720ef6e5-f6e9-4ce9-9ad1-c8a4b90ad02f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85843be9-d1ea-4027-b2a4-df53e2038af9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1042x554",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbe657c9-0c27-48bf-b764-38b3e565baf2",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "python"
+    }, {
+      "id": "2e8f6e38-7c1c-46cf-a24a-0812ebbcfaf1",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > div:nth-child(1)",
+      "targets": [
+        ["css=form > div:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9080a7d9-3a09-4f97-a695-446329c84ba0",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b755468e-53a6-4744-83ff-517b4be4bc6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eKjLze .LC20lb",
+      "targets": [
+        ["css=.eKjLze .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Welcome to Python.org')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0644d139-4076-4c51-8533-17f569c9d780",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ca0cb138-4153-4538-b61e-e3264e540c1e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["81e8b52b-a3db-4452-bad8-b0ca47032962"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
